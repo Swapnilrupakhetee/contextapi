@@ -1,11 +1,16 @@
 
 import './App.css';
+import UserContextPorvider from './context/UserContextProvider';
 
 function App() {
   return (
-    <div className="App">
+    <UserContextPorvider>
+      <div className="App">
       <h1>Hiii</h1>
     </div>
+
+    </UserContextPorvider>
+    
   );
 }
 
